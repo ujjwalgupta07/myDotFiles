@@ -1,0 +1,7 @@
+alias "copy=xclip -selection clipboard"
+alias "up=sudo apt-get update"
+alias "ug=sudo apt-get upgrade"
+alias "ins=sudo apt-get install"
+alias "uph=sudo http_proxy='http://172.16.24.3:3128' apt-get update"
+alias "ugh=sudo http_proxy='http://172.16.24.3:3128' apt-get upgrade"
+alias "insh=sudo http_proxy='http://172.16.24.3:3128' apt-get install"

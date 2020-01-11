@@ -1,0 +1,41 @@
+# To bind the settings:
+# bind -f ~/.inputrc
+
+
+# This will set the whole input method to vim like editing
+# All input like bash, iPython etc. 
+# set editing-mode vi 
+
+
+# This line sets auto completion to be case-insensitive.
+set completion-ignore-case On
+
+
+# This line sets readline to display possible completions using 
+# different colors to indicate their file types. 
+# The colors are determined by the environmental variable LS_COLORS
+set colored-stats On
+
+
+# This line sets 3 to be the maximum number of characters to be 
+# the common prefix to display for completions. 
+# If the common prefix has more than 3 characters, 
+# they are replaced by ellipsis.
+set completion-prefix-display-length 3
+
+# This line sets the completions to be listed immediately 
+# instead of ringing the bell, when the completing word 
+# has more than one possible completion.
+# set show-all-if-ambiguous On
+
+# This line sets the completions to be listed immediately 
+# instead of ringing the bell, when the completing word 
+# has more than one possible completion but no partial completion can be made
+set show-all-if-unmodified On
+
+"\e[5~": history-search-backward   
+# "\e[6~": history-search-forward  
+
+# Sources:
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Debugging_with_gdb/readline-init-file.html
+#
