@@ -15,7 +15,6 @@ Plugin 'tpope/vim-fugitive'                       " Git interface
 
 " .................... Python Related Plugins Start.................... "
 Plugin 'nvie/vim-flake8'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'fs111/pydoc.vim'                          " pydoc: look up python functions with <shift>-K
 " .................... Python Related Plugins End .................... "
 
@@ -172,18 +171,6 @@ set undodir=~/.vim/tmp/undo//                     " Undo directory for gundo plu
 let g:gundo_right = 1                             " Open the gundo graph to the right side of the screen istead of left
 let g:gundo_help = 1                              " Disable the help text in Gundo window
 ".................... Settings related to Gundo Plugin End ...................." 
-
-
-".................... Settings related to syntastic plugin start...................."
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}      " When syntax errors are detected a flag will be shown
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1      " To automatically update its output each time an error is resolved
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0                 " To make Syntastic highlights the errors automatically when a file is opened, 
-let g:syntastic_check_on_wq = 0
-".................... Settings related to syntastic plugin end...................."
 
 
 syntax on
