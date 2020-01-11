@@ -140,8 +140,6 @@ nnoremap <C-K> <C-W><C-K>                         " Ctrl + K move to the split a
 nnoremap <C-L> <C-W><C-L>                         " Ctrl + L move to the split to the right
 nnoremap <C-H> <C-W><C-H>                         " Ctrl + H move to the split to the left
 
-let g:clang_library_path='/home/ujjwal/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.9'
-
 
 " To make vim return to the same line when we reopen a file
 if has("autocmd")
@@ -150,11 +148,55 @@ if has("autocmd")
 endif
 
 
-let g:ycm_autoclose_preview_window_after_completion=1           " It line ensures that the auto-complete
-                                                                " window goes away when we are done with it.
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>  " Mapping goto definition.
 let NERDTreeIgnore=['\.pyc$', '\~$']              " Ignore files in NERDTree
 nmap <F7> :TagbarToggle<CR>
+
+
+".................... Settings related to YouCompleteMe start ...................."
+" File for which YCM should be turned off
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar': 1,
+      \ 'markdown': 1,
+      \ 'netrw': 1,
+      \ 'unite': 1,
+      \ 'vimwiki': 1,
+      \ 'pandoc': 1,
+      \ 'infolog': 1,
+      \ 'leaderf': 1,
+      \ 'mail': 1
+      \}
+
+let g:ycm_show_diagnostics_ui       = 1           " default 1
+let g:ycm_error_symbol              = '>>'        " Error Symbol
+let g:ycm_warning_symbol            = '>'         " Warning Symbol
+let g:ycm_complete_in_strings       = 1           " default 1
+let g:ycm_enable_diagnostic_signs   = 1           " default 1
+let g:ycm_confirm_extra_conf        = 1           " YCM will ask once per .ycm_extra_conf.py 
+                                                  " file if it is safe to be loaded
+let g:ycm_complete_in_comments      = 0           " show the completion menu even when typing inside comments
+let g:ycm_key_invoke_completion     = '<C-Space>' " used to invoke the completion menu for semantic completion
+let g:ycm_key_list_stop_completion  = ['<C-y>']   " Ctrl Y to close the completion menu.                                                                
+
+
+let g:ycm_always_populate_location_list       = 1       " default 0
+let g:ycm_register_as_syntastic_checker       = 1       " default 1
+let g:ycm_enable_diagnostic_highlighting      = 0       " default 1
+let g:ycm_disable_for_files_larger_than_kb    = 1000    " Defines the max size for a file to be considered for completion
+let g:ycm_filepath_completion_use_working_dir = 0       " Will force YCM to always interpret relative paths as
+                                                        " being relative to Vim's current working directory.
+let g:ycm_collect_identifiers_from_tags_files = 0       " default 0
+let g:ycm_goto_buffer_command       = 'same-buffer'     " Defines where GoTo* commands result should be opened.
+                                                        " ['same-buffer', 'horizontal-split', 'vertical-split', 'new-tab']
+let g:ycm_autoclose_preview_window_after_completion=1   " This line ensures that the auto-complete
+                                                        " window goes away when we are done with it.
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'  " Where to search for .ycm_extra_conf.py if not found
+
+let g:clang_library_path='/home/ujjwal/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.9'
+
+
+nnoremap <F11> :YcmForceCompileAndDiagnostics <CR>
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>  " Mapping goto definition.
+".................... Settings related to YouCompleteMe end ...................."
 
 
 ".................... Settings related to Gundo Plugin start...................."
