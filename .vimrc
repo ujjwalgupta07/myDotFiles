@@ -54,6 +54,7 @@ Plugin 'ryanoasis/vim-devicons'
 
 
 Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
+Plugin 'vim-scripts/IndexedSearch'                " Search results counter
 
 
 " All of our Plugins must be added before the following line
