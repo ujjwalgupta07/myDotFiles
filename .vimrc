@@ -108,6 +108,10 @@ autocmd FileType python nnoremap <buffer> <F6> <ESC>:w<CR>:!python3 %<cr>
 " uncomment the below line. It will open the output in right side of the
 " screen in terminal
 " autocmd FileType python nnoremap <buffer> <F6> <ESC>:w<CR>:botright vert ter python3 %<cr>
+
+
+" Ability to add python breakpoints
+au FileType python map <silent> <leader>b Oimport pdb; pdb.set_trace()<esc>
 "................. End Python Stuff .................
 
 autocmd filetype cpp nnoremap <buffer> <F6> <ESC>:w<CR>:exec '!g++ -g '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
