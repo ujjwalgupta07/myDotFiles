@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'                        " let Vundle manage Vundle, re
 Plugin 'scrooloose/nerdcommenter'                 " To add Comments in code (language dependent)
 Plugin 'sjl/gundo.vim'                            " To manage the undo and redo levels
 Plugin 'tpope/vim-fugitive'                       " Git interface
+Plugin 'mhinz/vim-signify'                        " Git/mercurial/others diff icons on the side of the file lines
 
 
 " .................... Python Related Plugins Start.................... "
@@ -50,6 +51,9 @@ Plugin 'jistr/vim-nerdtree-tabs'
 " To show differnt files in color in NERDTree and more:
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'ryanoasis/vim-devicons'
+
+
+Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
 
 
 " All of our Plugins must be added before the following line
@@ -213,6 +217,9 @@ set undodir=~/.vim/tmp/undo//                     " Undo directory for gundo plu
 let g:gundo_right = 1                             " Open the gundo graph to the right side of the screen istead of left
 let g:gundo_help = 1                              " Disable the help text in Gundo window
 ".................... Settings related to Gundo Plugin End ...................." 
+
+
+let g:yankring_history_dir = '~/.vim/tmp/'
 
 
 syntax on
