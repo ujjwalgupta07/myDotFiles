@@ -252,6 +252,7 @@ set showcmd                                       " show partial command on last
 filetype plugin indent on                         " enables filetype detection
 set showmatch                                     " show the matching part of the pair for [] {} and ()
 set backspace=indent,eol,start                    " make backspaces more powerfull
+set updatetime=100                                " For vim-signify to update the diff icons default updatetime 4000ms
 
 autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
