@@ -247,3 +247,12 @@ nmap :W   :w
 nmap :Q   :q
 map   q   :q<CR>
 " map   w   :w<CR>
+
+
+
+" >>>>>>>>>> All Shortcuts <<<<<<<<<<
+" F7 Flake Check
+" F6 Compile C++ and Python Program
+" F8 To open Terminal Right side of the window
+" F5 Toggle Gundo
+" Ctrl N Toggle NerdTree
