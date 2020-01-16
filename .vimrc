@@ -228,7 +228,10 @@ let g:gundo_help = 1                              " Disable the help text in Gun
 ".................... Settings related to Gundo Plugin End ...................." 
 
 
+" YankRing -----------------------------
 let g:yankring_history_dir = '~/.vim/tmp/'
+nnoremap <silent> <F11> :YRShow<CR>               " F11 to show the YankRing
+
 
 " Airline ------------------------------
 let g:airline_powerline_fonts = 0
