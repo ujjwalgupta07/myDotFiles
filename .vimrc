@@ -40,7 +40,10 @@ Plugin 'altercation/vim-colors-solarized'
 
 " Powerline is a status bat that displays things like the current virtualenv,
 " git branch, files being edited, and much more
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} 
+" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} 
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 
 " File System
@@ -220,6 +223,11 @@ let g:gundo_help = 1                              " Disable the help text in Gun
 
 
 let g:yankring_history_dir = '~/.vim/tmp/'
+
+" Airline ------------------------------
+let g:airline_powerline_fonts = 0
+let g:airline_theme = 'bubblegum'
+let g:airline#extensions#whitespace#enabled = 0
 
 
 syntax on
