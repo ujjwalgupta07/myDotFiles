@@ -38,10 +38,7 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
 
-" Powerline is a status bat that displays things like the current virtualenv,
-" git branch, files being edited, and much more
-" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} 
-
+" To show nice informations on status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
