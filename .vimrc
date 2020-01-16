@@ -207,7 +207,7 @@ let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'  " Where to search for .y
 let g:clang_library_path='/home/ujjwal/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.9'
 
 
-nnoremap <F11> :YcmForceCompileAndDiagnostics <CR>
+nnoremap <F4> :YcmForceCompileAndDiagnostics <CR>
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>  " Mapping goto definition.
 ".................... Settings related to YouCompleteMe end ...................."
 
@@ -230,7 +230,7 @@ let g:gundo_help = 1                              " Disable the help text in Gun
 
 " YankRing -----------------------------
 let g:yankring_history_dir = '~/.vim/tmp/'
-nnoremap <silent> <F11> :YRShow<CR>               " F11 to show the YankRing
+nnoremap <silent> <F3> :YRShow<CR>               " F3 to show the YankRing
 
 
 " Airline ------------------------------
