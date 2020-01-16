@@ -93,6 +93,7 @@ au BufNewFile,BufRead *.py
 highlight BadWhitespace ctermbg=red guibg=red                         " Use the below highlight group when displaying bad whitespace is desired.
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/          " Display tabs at the beginning of a line in Python mode as bad.
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/  " Make trailing whitespace be flagged as bad.
+autocmd BufWritePre *.py :%s/\s\+$//e                                 " clear empty spaces at the end of lines on save of python files
 
 
 autocmd FileType python set foldmethod=indent     " Enable folding
