@@ -162,6 +162,7 @@ endif
 
 let NERDTreeIgnore=['\.pyc$', '\~$']              " Ignore files in NERDTree
 nmap <F7> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1                        " autofocus on tagbar open
 
 
 ".................... Settings related to YouCompleteMe start ...................."
