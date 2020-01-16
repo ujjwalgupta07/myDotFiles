@@ -119,7 +119,7 @@ nnoremap <F8> :botright vert ter<CR>
 
 ".................... Settings related to NERDTree start ...................."
 let g:nerdtree_tabs_open_on_console_startup=0     " To run NERDTreeTabs on console vim startup, set 1
-map <C-n> :NERDTreeTabsToggle<CR>                 " Mapping CTRL + N to On/Off NerdTree for all tabs
+map nn :NERDTreeTabsToggle<CR>"                   " Mapping CTRL + N to On/Off NerdTree for all tabs
 let g:NERDSpaceDelims = 1                         " Add spaces after comment delimiters by default
 let g:NERDCompactSexyComs = 1                     " Use compact syntax for prettified multi-line comments
 let g:NERDDefaultAlign = 'left'                   " Align line-wise comment delimiters flush left instead of following code indentation
@@ -279,8 +279,10 @@ map   q   :q<CR>
 
 
 " >>>>>>>>>> All Shortcuts <<<<<<<<<<
-" F7 Flake Check
-" F6 Compile C++ and Python Program
-" F8 To open Terminal Right side of the window
+" F3 YankRing
+" F4 YcmForceCompileAndDiagnostics
 " F5 Toggle Gundo
-" Ctrl N Toggle NerdTree
+" F6 Compile C++ and Python Program
+" F7 Flake Check
+" F8 To open Terminal Right side of the window
+" nn Toggle NerdTree
