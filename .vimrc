@@ -242,6 +242,7 @@ set textwidth=80
 set ttyscroll=0
 set hlsearch
 set incsearch                                     " Show mathced texts while typing
+set fillchars+=vert:\                             " remove vertical lines on window division
 set laststatus=2                                  " Always show the statusline
 set foldenable                                    " Enable folding
 set foldnestmax=10                                " 10 nested fold max
