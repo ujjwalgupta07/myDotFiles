@@ -11,6 +11,10 @@ Plugin 'gmarik/Vundle.vim'                        " let Vundle manage Vundle, re
 Plugin 'scrooloose/nerdcommenter'                 " To add Comments in code (language dependent)
 Plugin 'sjl/gundo.vim'                            " To manage the undo and redo levels
 Plugin 'tpope/vim-fugitive'                       " Git interface
+Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
+Plugin 'vim-scripts/IndexedSearch'                " Search results counter
+Plugin 'Townk/vim-autoclose'                      " Automatically close parenthesis, etc
+Plugin 'myusuf3/numbers.vim'                      " Relative numbering in Normal Mode and normal mode when in insert mode
 Plugin 'mhinz/vim-signify'                        " Git/mercurial/others diff icons on the side of the file lines
 
 
@@ -53,10 +57,6 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'ryanoasis/vim-devicons'
 
 
-Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
-Plugin 'vim-scripts/IndexedSearch'                " Search results counter
-Plugin 'Townk/vim-autoclose'                      " Automatically close parenthesis, etc
-Plugin 'myusuf3/numbers.vim'                      " Relative numbering in Normal Mode and normal mode when in insert mode
 
 
 " All of our Plugins must be added before the following line
