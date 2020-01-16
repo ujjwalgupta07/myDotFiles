@@ -55,6 +55,7 @@ Plugin 'ryanoasis/vim-devicons'
 
 Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
 Plugin 'vim-scripts/IndexedSearch'                " Search results counter
+Plugin 'Townk/vim-autoclose'                      " Automatically close parenthesis, etc
 
 
 " All of our Plugins must be added before the following line
