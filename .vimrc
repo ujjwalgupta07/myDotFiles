@@ -241,7 +241,8 @@ set autoindent
 set textwidth=80
 set ttyscroll=0
 set hlsearch
-" set laststatus=2                                  " Always show the statusline
+set incsearch                                     " Show mathced texts while typing
+set laststatus=2                                  " Always show the statusline
 set foldenable                                    " Enable folding
 set foldnestmax=10                                " 10 nested fold max
 set foldmethod=indent                             " fold based on indent level
