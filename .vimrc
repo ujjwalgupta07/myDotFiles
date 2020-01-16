@@ -247,6 +247,7 @@ set laststatus=2                                  " Always show the statusline
 set foldenable                                    " Enable folding
 set foldnestmax=10                                " 10 nested fold max
 set foldmethod=indent                             " fold based on indent level
+set scrolloff=5                                   " When scrolling, keep cursor 5 lines away from screen border
 set ma                                            " will make buffer modifiable
 set nu rnu                                        " Turn on the hybrid line numbers on the side of the screen
 set softtabstop=2                                 " Tab key results in # spaces
