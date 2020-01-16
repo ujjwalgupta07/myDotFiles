@@ -238,7 +238,7 @@ let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 
-
+map tt :tabnew<CR>"                              " To open a new tab
 syntax on
 set autoindent
 set textwidth=80
@@ -286,3 +286,4 @@ map   q   :q<CR>
 " F7 Flake Check
 " F8 To open Terminal Right side of the window
 " nn Toggle NerdTree
+" tt to open a new tab
