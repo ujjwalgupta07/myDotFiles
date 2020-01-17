@@ -57,6 +57,8 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'ryanoasis/vim-devicons'
 
 
+" Silver Searcher
+Plugin 'rking/ag.vim'
 
 
 " All of our Plugins must be added before the following line
@@ -279,11 +281,13 @@ map   q   :q<CR>
 
 
 " >>>>>>>>>> All Shortcuts <<<<<<<<<<
-" F3 YankRing
-" F4 YcmForceCompileAndDiagnostics
-" F5 Toggle Gundo
-" F6 Compile C++ and Python Program
-" F7 Flake Check
-" F8 To open Terminal Right side of the window
-" nn Toggle NerdTree
-" tt to open a new tab
+" F3                YankRing
+" F4                YcmForceCompileAndDiagnostics
+" F5                Toggle Gundo
+" F6                Compile C++ and Python Program
+" F7                Flake Check
+" F8                To open Terminal Right side of the window
+" nn                Toggle NerdTree
+" tt                to open a new tab
+" CTRL + N          To cycle through YankRing
+" CTRL + P          To Cycle through YankRing in backward direction
