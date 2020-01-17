@@ -13,7 +13,6 @@ Plugin 'sjl/gundo.vim'                            " To manage the undo and redo 
 Plugin 'tpope/vim-fugitive'                       " Git interface
 Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
 Plugin 'vim-scripts/IndexedSearch'                " Search results counter
-Plugin 'Townk/vim-autoclose'                      " Automatically close parenthesis, etc
 Plugin 'myusuf3/numbers.vim'                      " Relative numbering in Normal Mode and normal mode when in insert mode
 Plugin 'mhinz/vim-signify'                        " Git/mercurial/others diff icons on the side of the file lines
 
