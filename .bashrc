@@ -169,3 +169,12 @@ userColor="\[\033[01;32m\]"
 
 # '\$(__git_ps1)' adds git-related stuff
 export PS1="$userColor\u:$green\$(__git_ps1)$dirColor\w\[\033[00m\]\$ "
+
+# For Python virtual environment
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
+# To colorize the output of man with the help of bat
+# https://github.com/sharkdp/bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
