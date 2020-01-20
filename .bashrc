@@ -178,3 +178,4 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # https://github.com/sharkdp/bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+export PATH=$PATH:~/bin
