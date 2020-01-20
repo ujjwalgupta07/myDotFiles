@@ -1,0 +1,5 @@
+#!/bin/bash
+# open fzf and read the input file location and then open it in vim
+
+op() { fzf | xargs -r -oI % vim % ;}
+op

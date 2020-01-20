@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# To show the all the commits in a file and after selecting any commit show the
+# difference between that commit and current files
+# From https://github.com/junegunn/fzf/wiki/examples
+
+gshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+      --bind "ctrl-m:execute:
+                (grep -o '[a-f0-9]\{7\}' | head -1 |
+                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
+                {}
+FZF-EOF"
+}
+gshow

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# To show the hidden directory too for changing the directory
+# From https://github.com/junegunn/fzf/wiki/examples
+
+fda() {
+  local dir
+  dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
+fda
