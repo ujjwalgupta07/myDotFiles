@@ -246,7 +246,7 @@ let g:airline#extensions#whitespace#enabled = 0
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', '~/.vim/bundle/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
-map <leader>z <esc>:Files<CR>                     " \z to open the fuzzy finder
+map <leader>z <esc>:Files<CR>"                    " \z to open the fuzzy finder
 
 
 map tt :tabnew<CR>"                               " To open a new tab
