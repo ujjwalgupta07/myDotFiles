@@ -60,10 +60,12 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'rking/ag.vim'
 
 
+" Fuzzy Finder
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+
 " All of our Plugins must be added before the following line
 call vundle#end()            " required
-
-
 
 
 
@@ -239,7 +241,15 @@ let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 
-map tt :tabnew<CR>"                              " To open a new tab
+
+" Fzf to show the preview of file with Files command
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', '~/.vim/bundle/fzf.vim/bin/preview.sh {}']}, <bang>0)
+
+map <leader>z <esc>:Files<CR>                     " \z to open the fuzzy finder
+
+
+map tt :tabnew<CR>"                               " To open a new tab
 syntax on
 set autoindent
 set textwidth=80
