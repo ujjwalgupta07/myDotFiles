@@ -197,6 +197,7 @@ let g:ycm_key_list_stop_completion  = ['<C-y>']   " Ctrl Y to close the completi
 let g:ycm_always_populate_location_list       = 1       " default 0
 let g:ycm_register_as_syntastic_checker       = 1       " default 1
 let g:ycm_enable_diagnostic_highlighting      = 0       " default 1
+let g:ycm_min_num_of_chars_for_completion     = 2       " Min characters for YCM to show suggestions
 let g:ycm_disable_for_files_larger_than_kb    = 1000    " Defines the max size for a file to be considered for completion
 let g:ycm_filepath_completion_use_working_dir = 0       " Will force YCM to always interpret relative paths as
                                                         " being relative to Vim's current working directory.
