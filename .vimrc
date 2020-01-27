@@ -206,6 +206,16 @@ let g:ycm_goto_buffer_command       = 'same-buffer'     " Defines where GoTo* co
 let g:ycm_autoclose_preview_window_after_completion=1   " This line ensures that the auto-complete
                                                         " window goes away when we are done with it.
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'  " Where to search for .ycm_extra_conf.py if not found
+" let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
+let g:ycm_path_to_python_interpreter = '/home/ujjwal/anaconda3/bin/python'  " Setting the interpreter to anaconda path
+let g:ycm_server_python_interpreter  = '/home/ujjwal/anaconda3/bin/python'  " Show the suggestions when pressing . (ex: tf. )
+
+
+" To trigger semantic suggestions automatically after pressing zero characters
+let g:ycm_semantic_triggers = {
+	\   'python': [ 're!\w{0}' ]
+	\ }
+
 
 let g:clang_library_path='/home/ujjwal/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.9'
 
