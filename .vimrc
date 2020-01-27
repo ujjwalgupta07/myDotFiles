@@ -11,7 +11,6 @@ Plugin 'gmarik/Vundle.vim'                        " let Vundle manage Vundle, re
 Plugin 'scrooloose/nerdcommenter'                 " To add Comments in code (language dependent)
 Plugin 'sjl/gundo.vim'                            " To manage the undo and redo levels
 Plugin 'tpope/vim-fugitive'                       " Git interface
-Plugin 'vim-scripts/YankRing.vim'                 " Yank history navigation
 Plugin 'vim-scripts/IndexedSearch'                " Search results counter
 Plugin 'myusuf3/numbers.vim'                      " Relative numbering in Normal Mode and normal mode when in insert mode
 Plugin 'mhinz/vim-signify'                        " Git/mercurial/others diff icons on the side of the file lines
@@ -242,11 +241,6 @@ let g:gundo_help = 1                              " Disable the help text in Gun
 ".................... Settings related to Gundo Plugin End ...................." 
 
 
-" YankRing -----------------------------
-let g:yankring_history_dir = '~/.vim/tmp/'
-nnoremap <silent> <F3> :YRShow<CR>               " F3 to show the YankRing
-
-
 " Airline ------------------------------
 let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
@@ -301,7 +295,6 @@ map   q   :q<CR>
 
 
 " >>>>>>>>>> All Shortcuts <<<<<<<<<<
-" F3                YankRing
 " F4                YcmForceCompileAndDiagnostics
 " F5                Toggle Gundo
 " F6                Compile C++ and Python Program
@@ -309,5 +302,3 @@ map   q   :q<CR>
 " F8                To open Terminal Right side of the window
 " nt                Toggle NerdTree
 " tt                to open a new tab
-" CTRL + N          To cycle through YankRing
-" CTRL + P          To Cycle through YankRing in backward direction
