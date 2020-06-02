@@ -178,4 +178,23 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # https://github.com/sharkdp/bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-export PATH=$PATH:~/bin
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+    for file in $HOME/bin/*;
+    do
+      source $file;
+    done
+fi
+
+source ~/mySetting/forgit.plugin.zsh
+
+
+# Fzf output setting
+fzfOutput_withColor=0;
+
+if [[ "$fzfOutput_withColor" -eq 1 ]];
+then
+  export FZF_DEFAULT_OPTS='--reverse --height 90% --preview "bat --style=numbers --color=always {} | head -500" --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899''
+else
+  export FZF_DEFAULT_OPTS='--reverse --height 90% --preview "bat --style=numbers --color=always {} | head -500"'
+fi
