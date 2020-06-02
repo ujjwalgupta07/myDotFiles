@@ -211,9 +211,9 @@ let g:ycm_path_to_python_interpreter = '/home/ujjwal/anaconda3/bin/python'  " Se
 let g:ycm_server_python_interpreter  = '/home/ujjwal/anaconda3/bin/python'  " Show the suggestions when pressing . (ex: tf. )
 
 
-" To trigger semantic suggestions automatically after pressing zero characters
+" To trigger semantic suggestions automatically after pressing two characters
 let g:ycm_semantic_triggers = {
-	\   'python': [ 're!\w{0}' ]
+	\   'python': [ 're!\w{2}' ]
 	\ }
 
 
