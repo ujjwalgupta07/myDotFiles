@@ -121,11 +121,11 @@ nnoremap <F8> :botright vert ter<CR>
 
 ".................... Settings related to NERDTree start ...................."
 let g:nerdtree_tabs_open_on_console_startup=0     " To run NERDTreeTabs on console vim startup, set 1
-map <C-n> :NERDTreeTabsToggle<CR>"                   " Mapping nt to On/Off NerdTree for all tabs
+map <C-n> :NERDTreeTabsToggle<CR>"                " Mapping nt to On/Off NerdTree for all tabs
 let g:NERDSpaceDelims = 1                         " Add spaces after comment delimiters by default
 let g:NERDCompactSexyComs = 1                     " Use compact syntax for prettified multi-line comments
 let g:NERDDefaultAlign = 'left'                   " Align line-wise comment delimiters flush left instead of following code indentation
-map <C-_> <plug>NERDCommenterInvert               " Mapping of NERDCommenterInvert to CTRL+ /
+map <C-_> <plug>NERDCommenterInvert"              " Mapping of NERDCommenterInvert to CTRL+ /
 let NERDTreeHighlightCursorline=1                 " Highlight the selected entry in the tree
 ".................... Settings related to NERDTree end ...................."
 
