@@ -116,7 +116,7 @@ autocmd FileType python nnoremap <buffer> <F6> <ESC>:w<CR>:!python3 %<cr>
 au FileType python map <silent> <leader>b Oimport pdb; pdb.set_trace()<esc>
 "................. End Python Stuff .................
 
-autocmd filetype cpp nnoremap <buffer> <F6> <ESC>:w<CR>:exec '!g++ -g '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <buffer> <F6> <ESC>:w<CR>:exec '!clear && g++ -g '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 nnoremap <F8> :botright vert ter<CR>
 
 ".................... Settings related to NERDTree start ...................."
